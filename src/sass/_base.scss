@@ -1,0 +1,41 @@
+*,
+::after,
+::before {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    // background: #5f5f5f;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// RESPONSIVE BREAKPOINTS
+$bp-1200: 75em; // 1200px /16px 
+$bp-1000: 62.5em; // 1000px
+$bp-800: 50em; // 800px;
+$bp-600: 37.5em; // 600px;
+$bp-400: 28.13em; // 450px;
+
+$color1:rgb(25, 189, 164);
+$color2:rgb(19, 76, 102);
+$color3:  rgb(46, 165, 143);
+
+$color4: #f8365c;
+$light:rgb(241, 241, 241);
+$dark:rgb(46, 46, 46);
+$gray:#777;

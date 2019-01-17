@@ -1,0 +1,45 @@
+header {
+    padding: 10px 0px;
+    transition: all 300ms ease-in;
+}
+
+header .header_logo {
+    flex-grow: 1;
+}
+
+header .header_logo_venue {
+    font-size: 3rem;
+    letter-spacing: .2rem;
+}
+
+header .header_logo_title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#navbar {
+    // height: 60px !important;
+}
+
+#sideMenu{
+    border: 1px solid #00f;
+}
+@media only screen and (max-width: $bp-600) {
+    header .header_logo_venue {
+        font-size: 2.4rem;
+    }
+    
+    header .header_logo_title {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: $bp-400) {
+    header .header_logo_venue {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    header .header_logo_title {
+        display: none;
+    }
+}

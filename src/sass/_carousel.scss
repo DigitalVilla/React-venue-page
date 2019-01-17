@@ -1,0 +1,88 @@
+.carrousel_wrapper {
+    height: 700px;
+    overflow: hidden;
+    /* background-attachment: fixed; */
+}
+
+.carrousel_image {
+    background-size: cover !important;
+}
+
+.header_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    
+    & img {
+        display: none;
+    }
+
+    & h1 {
+        letter-spacing: .8rem;
+        text-transform: uppercase;
+        font-size: 6rem;
+        white-space: nowrap;
+    }
+
+    & h2 {
+        margin-top: -1rem;
+        font-size: 4rem;
+        letter-spacing: .2rem;
+        text-transform: capitalize;
+        margin-bottom: 3rem;
+    }
+    @media only screen and (max-width: $bp-1200) {
+        & h1 {
+            font-size: 5rem;
+        }
+        & h2 {
+            font-size: 3.4rem;
+            margin-top: 0rem;
+        }
+    }
+
+    @media only screen and (max-width: $bp-800) {
+        & h1 {
+            font-size: 4rem;
+        }
+        & h2 {
+            font-size: 2.6rem;
+        }
+    }
+
+    @media only screen and (max-width: $bp-600) {
+        & h1 {
+            font-size: 3.5rem;
+            letter-spacing: .4rem;
+        }
+        & h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    @media only screen and (max-width: $bp-400) {
+        & img {
+            margin: auto;
+            width: 40vw;
+            display: block;
+            margin-bottom: 1rem;
+        }    
+        & h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            & span {
+                display: none;
+            }
+        }
+
+        & h2 {
+            display: none;
+        }
+    }
+
+
+}

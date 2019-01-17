@@ -1,0 +1,62 @@
+.countdown_wrapper {
+    position: absolute;
+    bottom: 0px;
+    color: #ffffff;
+
+    & .countdown_top {
+        background: rgba($color2,.6);
+        font-size: 2em;
+        padding: 10px;
+        display: inline-block;
+        text-transform: capitalize;
+    }
+
+    & .countdown_bottom {
+        display: flex;
+        background: rgba($color2,.6);
+        padding: 10px 0px 10px 20px;
+    }
+
+    & .countdown_time {
+        font-size: 6rem;
+        border-right: 3px solid #118a9847;
+        margin-right: 2rem;
+        padding-right: 2rem;
+    }
+
+    & .countdown_item:last-child .countdown_time {
+        border: none;
+    }
+
+    & .countdown_tag {
+        text-transform: uppercase;
+        font-size: 2rem;
+        opacity: .8;
+        padding-left: 4px;
+    }
+
+    @media only screen and (max-width: $bp-800) {
+        & .countdown_time {
+            font-size: 4rem;
+            margin-right: 1rem;
+            padding-right: 1rem;
+        }
+
+        & .countdown_tag {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media only screen and (max-width: $bp-400) {
+        & .countdown_top {
+            font-size: 1.5rem;
+            padding: .5rem;
+        }
+        & .countdown_time {
+            font-size: 3.5rem;
+        }
+        & .countdown_bottom {
+            padding: 5px 0px 5px 10px;
+        }
+    }
+}
